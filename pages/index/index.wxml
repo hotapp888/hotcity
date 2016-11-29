@@ -1,0 +1,3 @@
+<!--index.wxml-->
+<import src="../city/city.wxml"/>
+<template is="city" data="{{province}}" />

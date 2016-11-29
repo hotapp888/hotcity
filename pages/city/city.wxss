@@ -1,0 +1,37 @@
+.city-section-wrap{
+    display: flex;
+}
+.city-section-wrap{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.city-section{
+    flex: 1;
+}
+#province,
+#city,
+#town{
+    
+    box-sizing: border-box;
+    text-align: left;
+}
+.area_name{
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 34rpx;
+    padding: 0 26rpx;
+    font-family: '微软雅黑';
+    border-bottom: 1px solid #ccc;
+}
+#province{
+    background: #fff;
+    color: #666;
+}
+#city{
+    background: #fff;
+    color: #808080;
+}
+#town{
+    background: #ffffff;
+    color: #999;
+}
