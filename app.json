@@ -1,11 +1,25 @@
 {
   "pages":[
-    "pages/index/index"
+    "pages/style1/index",
+    "pages/style2/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "选择地区",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/style1/index",
+      "text": "样式一",
+      "iconPath": "iconPath",
+      "selectedIconPath": "selectedIconPath"
+    }, {
+      "pagePath": "pages/style2/index",
+      "text": "样式二",
+      "iconPath": "iconPath",
+      "selectedIconPath": "selectedIconPath"
+    }]
   }
 }
