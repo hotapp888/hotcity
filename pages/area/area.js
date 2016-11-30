@@ -73,15 +73,21 @@ function selectArea(that,e){
     //设置省份信息
     if(level == 'province'){
         //如果重新选择了省份则清空市和县的数据
-        if(adcode != areaData.province.adcode){
-            areaData.city = '';
-            areaData.district = '';
-        }
+        // if(adcode != areaData.province.adcode){
+        //     areaData.city = '';
+        //     areaData.district = '';
+        // }
         areaData.province = item;
         areaData.areaListShow = false;
-        that.setData({
-            areaData : areaData
-        })
+        query(adcode,that,function(res){
+            areaData.city = res.data[0];
+            query(areaData.city.adcode,that,function(res){
+                areaData.district = res.data[0];
+                that.setData({
+                    areaData : areaData
+                })
+            })
+        });  
     }
     //设置城市信息
     if(level == 'city'){
@@ -91,8 +97,11 @@ function selectArea(that,e){
         }
         areaData.city = item;
         areaData.areaListShow = false;
-        that.setData({
-            areaData : areaData
+        query(areaData.city.adcode,that,function(res){
+            areaData.district = res.data[0];
+            that.setData({
+                areaData : areaData
+            })
         })
     }
     //设置县/镇信息

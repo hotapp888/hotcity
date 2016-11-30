@@ -4,26 +4,26 @@
         <view class='area-section-group'>
             <view class='area_label'>省：</view>
             <view class='area_input' id='province'   bindtap='showArea'>
-                {{areaData.province.area_name}}
+                {{areaData.province.name}}
             </view>
         </view>
         <view class='area-section-group'>
             <view class='area_label'>市：</view>
             <view class='area_input' id='city' bindtap='showArea'>
-                {{areaData.city.area_name}}
+                {{areaData.city.name}}
             </view>
         </view>
         <view class='area-section-group'>
             <view class='area_label'>区/县：</view>
             <view class='area_input' id='district' bindtap='showArea'>
-                {{areaData.district.area_name}}
+                {{areaData.district.name}}
             </view>
         </view>
     </view>
     <block wx:if='{{areaData.areaListShow}}'>
         <scroll-view scroll-y="true" class="area-section-list">
             <block wx:for="{{areaData.areaList}}">
-                <view data-area_name='{{item.name}}' data-level='{{item.level}}' data-adcode='{{item.adcode}}'  data-parent_adcode='{{item.parent_adcode}}' class='area_name' bindtap='selectArea'>
+                <view data-name='{{item.name}}' data-level='{{item.level}}' data-adcode='{{item.adcode}}'  data-parent_adcode='{{item.parent_adcode}}' class='area_name' bindtap='selectArea'>
                     {{item.name}}
                 </view>
             </block>
