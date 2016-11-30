@@ -1,3 +1,12 @@
 <!--index.wxml-->
-<import src="../city/city.wxml"/>
-<template is="city" data="{{province}}" />
+<import src="../district/district.wxml"/>
+<template is="district" data="{{districts}}" />
+<view>
+    <button bindtap="getProvinces">点击选择行政区</button>
+    <text>
+        您选择的是
+        {{ districts.selectedProvince }}
+        {{ districts.selectedCity }}
+        {{ districts.selectedDistrict }}
+    </text>
+</view>

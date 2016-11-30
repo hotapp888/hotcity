@@ -1,21 +1,20 @@
-.city-section-wrap{
+.district-section-wrap {
     display: flex;
 }
-.city-section-wrap{
+.district-section-wrap {
     display: flex;
     flex-flow: row nowrap;
 }
-.city-section{
+.district-section {
     flex: 1;
 }
 #province,
 #city,
-#town{
-    
+#district {
     box-sizing: border-box;
     text-align: left;
 }
-.area_name{
+.district_name {
     height: 80rpx;
     line-height: 80rpx;
     font-size: 34rpx;
@@ -23,15 +22,15 @@
     font-family: '微软雅黑';
     border-bottom: 1px solid #ccc;
 }
-#province{
+#province {
     background: #fff;
     color: #666;
 }
-#city{
+#city {
     background: #fff;
     color: #808080;
 }
-#town{
+#district {
     background: #ffffff;
     color: #999;
 }

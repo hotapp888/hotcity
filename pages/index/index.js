@@ -1,47 +1,37 @@
 //index.js
-var queryArea = require('../city/city.js')
+var districts = require('../district/district.js')
 Page({
-  data: {
-      province:'',
-      city:'',
-      town:''
-  },
-  onLoad: function(options) {
-    var that = this;
-    //查询省份
-    queryArea.query(function(area){
-        that.setData({
-            province:area
-        })
-        console.log(that.data.province)
-    });
-    // Do some initialize when page load.
-  },
-  onReady: function() {
-    // Do something when page ready.
-  },
-  onShow: function() {
-    // Do something when page show.
-  },
-  onHide: function() {
-    // Do something when page hide.
-  },
-  onUnload: function() {
-    // Do something when page close.
-  },
-  onPullDownRefresh: function() {
-    // Do something when pull down.
-  },
-  onReachBottom: function() {
-    // Do something when page reach bottom.
-  },
-  // Event handler.
-  viewTap: function() {
+  data: {},
+
+  /**
+   * 获取省份
+   */
+  getProvinces: function(event) {
     this.setData({
-      text: 'Set some data for updating view.'
-    })
+      showButton: false,
+      showResult: false
+    });
+    districts.getProvinces(this);
   },
-  customData: {
-    hi: 'MINA'
+
+  /**
+   * 获取城市
+   */
+  getCities: function(event) {
+    districts.getCities(this, event);
+  },
+
+  /**
+   * 获取地区
+   */
+  getDistricts: function(event) {
+    districts.getDistricts(this, event);
+  },
+
+  /**
+   * 完成
+   */
+  finish: function(event) {
+    districts.finish(this, event);
   }
 })

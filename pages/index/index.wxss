@@ -1,2 +1,2 @@
 /**index.wxss**/
-@import "../city/city.wxss";
+@import "../district/district.wxss";
