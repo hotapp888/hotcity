@@ -1,0 +1,33 @@
+<!-- city.wxml -->
+<template name="area">
+    <view class='area-section-wrap'>
+        <view class='area-section-group'>
+            <view class='area_label'>省：</view>
+            <view class='area_input' id='province'   bindtap='showArea'>
+                {{areaData.province.area_name}}
+            </view>
+        </view>
+        <view class='area-section-group'>
+            <view class='area_label'>市：</view>
+            <view class='area_input' id='city' bindtap='showArea'>
+                {{areaData.city.area_name}}
+            </view>
+        </view>
+        <view class='area-section-group'>
+            <view class='area_label'>区/县：</view>
+            <view class='area_input' id='district' bindtap='showArea'>
+                {{areaData.district.area_name}}
+            </view>
+        </view>
+    </view>
+    <block wx:if='{{areaData.areaListShow}}'>
+        <scroll-view scroll-y="true" class="area-section-list">
+            <block wx:for="{{areaData.areaList}}">
+                <view data-area_name='{{item.name}}' data-level='{{item.level}}' data-adcode='{{item.adcode}}'  data-parent_adcode='{{item.parent_adcode}}' class='area_name' bindtap='selectArea'>
+                    {{item.name}}
+                </view>
+            </block>
+        </scroll-view>
+        <view class="close-area-list" bindtap='hideArea'><image src="../area/images/close_area_list.png" style="width:36rpx;height:36rpx;"></image></view>
+    </block>
+</template>

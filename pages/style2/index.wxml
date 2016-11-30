@@ -1,0 +1,4 @@
+<!--index.wxml-->
+<import src="../area/area.wxml"/>
+<template is="area" data="{{areaData}}" />
+<button bindtap='getAreaInfo'>保存</button>

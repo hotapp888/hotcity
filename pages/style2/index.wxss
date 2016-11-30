@@ -1,0 +1,2 @@
+/**index.wxss**/
+@import "../area/area.wxss";
