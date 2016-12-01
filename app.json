@@ -7,7 +7,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fc8e5d",
-    "navigationBarTitleText": "HotApp城市选择器",
+    "navigationBarTitleText": "HotCity 城市选择器",
     "navigationBarTextStyle":"#fff"
   },
   "tabBar": {

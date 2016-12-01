@@ -1,5 +1,5 @@
 //index.js
- var app = getApp();
+var app = getApp();
 var queryArea = require('../area/area.js');
 Page({
   data: {

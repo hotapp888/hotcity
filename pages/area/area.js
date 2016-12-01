@@ -5,7 +5,8 @@ var areaData = {
     province:'',
     city:'',
     district:'',
-    areaListShow:false
+    areaListShow:false,
+    districtShow:true
 }
 //初始化
 function init(that,e){
@@ -83,6 +84,11 @@ function selectArea(that,e){
             areaData.city = res.data[0];
             query(areaData.city.adcode,that,function(res){
                 areaData.district = res.data[0];
+                if(areaData.district){
+                    areaData.districtShow = true;
+                }else{
+                    areaData.districtShow = false;
+                }
                 that.setData({
                     areaData : areaData
                 })
@@ -99,6 +105,11 @@ function selectArea(that,e){
         areaData.areaListShow = false;
         query(areaData.city.adcode,that,function(res){
             areaData.district = res.data[0];
+            if(areaData.district){
+                areaData.districtShow = true;
+            }else{
+                areaData.districtShow = false;
+            }
             that.setData({
                 areaData : areaData
             })
@@ -108,6 +119,9 @@ function selectArea(that,e){
     if(level == 'district'){
         areaData.district = item;
         areaData.areaListShow = false;
+        if(!areaData.district){
+            areaData.districtShow = false;
+        }
         that.setData({
             areaData : areaData
         })
