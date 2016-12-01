@@ -20,10 +20,10 @@
 在你的js文件中, 必须要绑定四个事件:  
 getProvinces、getCities、getDistricts和finish  
 其中  
-getProvinces事件需要调用districts.getProvinces(this);
-getCities事件需要调用districts.getCities(this, event);
-getDistricts事件需要调用districts.getDistricts(this, event);
-finish事件需要调用districts.finish(this, event);
+getProvinces事件需要调用districts.getProvinces(this);  
+getCities事件需要调用districts.getCities(this, event);  
+getDistricts事件需要调用districts.getDistricts(this, event);  
+finish事件需要调用districts.finish(this, event);  
 
 ## 截图
 
