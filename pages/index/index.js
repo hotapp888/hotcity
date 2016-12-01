@@ -5,12 +5,5 @@ HotCity城市选择器由HotApp小程序统计团队开发并开源：https://gi
 */
 var app = getApp();
 Page({
-    data:{
-        areaInfo:''
-    },
-    onShow:function(e){
-        this.setData({
-             areaInfo:app.globalData.areaInfo
-        })
-    }
+
 })

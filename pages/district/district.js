@@ -3,7 +3,6 @@ HotCity城市选择器由HotApp小程序统计团队开发并开源：https://gi
 城市完整SQL下载地址和API接口文档说明：http://wenda.hotapp.cn/article/3
 小程序交流学习QQ群173063969
 */
-var app = getApp();
 var host = 'https://wxapi.hotapp.cn/api/districts';
 var districts = {
     provinces: [],
@@ -120,13 +119,8 @@ function finish(that, event) {
     that.setData({
         districts: districts
     });
-    save()
 }
-//保存并退出
-function save(){
-    app.globalData.areaInfo = districts.selectedProvince + districts.selectedCity + districts.selectedDistrict;
-    wx.navigateBack();
-}
+
 module.exports = {
   getProvinces: getProvinces,
   getCities: getCities,

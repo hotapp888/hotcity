@@ -8,9 +8,6 @@ var districts = require('../district/district.js');
 var app = getApp();
 Page({
   data: {},
-  onShow:function(event){
-    this.getProvinces();
-  },
   /**
    * 获取省份
    */

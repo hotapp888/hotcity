@@ -7,9 +7,7 @@ HotCity城市选择器由HotApp小程序统计团队开发并开源：https://gi
 var app = getApp();
 var queryArea = require('../area/area.js');
 Page({
-  data: {
-
-  },
+  data: {},
   onLoad: function(options) {
     // Do some initialize when page load.
     //初始化地区选择器
@@ -43,7 +41,5 @@ Page({
     //获取以选择的县/镇信息
     var district = queryArea.getDistrict(that,e);
     console.log(district)
-    app.globalData.areaInfo = province.name + city.name + district.name;
-    wx.navigateBack();
   }
 })

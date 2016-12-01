@@ -14,6 +14,8 @@ var areaData = {
 }
 //初始化
 function init(that,e){
+    areaData.areaListShow = false,
+    areaData.districtShow = true
     that.setData({
         areaData:areaData
     })

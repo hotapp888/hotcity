@@ -3,10 +3,6 @@ HotCity城市选择器由HotApp小程序统计团队开发并开源：https://gi
 城市完整SQL下载地址和API接口文档说明：http://wenda.hotapp.cn/article/3
 小程序交流学习QQ群173063969
 -->
-<view class="title">
-   <view class="area_label">未选择城市：</view>
-    <input class="area_input"  value="{{areaInfo}}" /> 
-</view>
 <navigator url="../style1/index" >
     <view class="area_type_list area_type_active">
         <image src="../../images/2_8.png" class="area_type_img"></image>
