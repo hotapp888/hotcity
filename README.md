@@ -14,9 +14,12 @@
 ```
 
 - 在对应的js中引入district.js文件
-`var WxParse = require('你的路径/wxParse/wxParse.js');`
+`var WxParse = require('你的路径/district/district.js');`
 
+- 使用:
+```javascript
 
+```
 ## 数据来源
 
 数据来源于高德地图, 从高德地图的行政区划查询中找到了api请求地址, 然后再写脚本把高德所有的数据全部导入到hotapp的数据库中
