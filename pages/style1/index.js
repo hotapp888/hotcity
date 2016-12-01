@@ -1,8 +1,8 @@
 //index.js
-var districts = require('../district/district.js')
+var districts = require('../district/district.js');
+var app = getApp();
 Page({
   data: {},
-
   /**
    * 获取省份
    */
@@ -33,5 +33,12 @@ Page({
    */
   finish: function(event) {
     districts.finish(this, event);
+  },
+  save:function(){
+    var selectedProvince = this.data.districts.selectedProvince;
+    var selectedCity = this.data.districts.selectedCity;
+    var selectedDistrict = this.data.districts.selectedDistrict;
+    app.globalData.areaInfo = selectedProvince + selectedCity + selectedDistrict;
+    wx.navigateBack();
   }
 })

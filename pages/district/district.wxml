@@ -6,6 +6,7 @@
                 <block wx:for="{{districts.provinces}}" >
                     <view class="district_name" data-adcode="{{item.adcode}}" data-name="{{item.name}}" bindtap="getCities">
                         {{item.name}}
+                        <image class="district_arrow" src="../../images/1_7.png" ></image>
                     </view>
                 </block>
             </view>
@@ -17,6 +18,7 @@
                 <block wx:for="{{districts.cities}}">
                     <view class="district_name" data-adcode="{{item.adcode}}" data-name="{{item.name}}" bindtap="getDistricts">
                         {{item.name}}
+                        <image class="district_arrow" src="../../images/1_7.png" ></image>
                     </view>
                 </block>
             </view>
@@ -28,6 +30,7 @@
                 <block wx:for="{{districts.districts}}">
                     <view class="district_name" data-adcode="{{item.adcode}}" data-name="{{item.name}}" bindtap="finish">
                         {{item.name}}
+                        <image class="district_arrow" src="../../images/1_7.png" ></image>
                     </view>
                 </block>
             </view>

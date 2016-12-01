@@ -1,2 +1,8 @@
 /**index.wxss**/
 @import "../area/area.wxss";
+.save-area-btn{
+    margin-top: 50rpx;
+    width: 50%;
+    color: #fff;
+    background: #fc8e5d;
+}

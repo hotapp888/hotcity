@@ -5,18 +5,21 @@
             <view class='area_label'>省：</view>
             <view class='area_input' id='province'   bindtap='showArea'>
                 {{areaData.province.name}}
+                <image class="area_arrow" src="../../images/1_7.png" ></image>
             </view>
         </view>
         <view class='area-section-group'>
             <view class='area_label'>市：</view>
             <view class='area_input' id='city' bindtap='showArea'>
                 {{areaData.city.name}}
+                <image class="area_arrow" src="../../images/1_7.png" ></image>
             </view>
         </view>
         <view class='area-section-group'>
             <view class='area_label'>区/县：</view>
             <view class='area_input' id='district' bindtap='showArea'>
                 {{areaData.district.name}}
+                <image class="area_arrow" src="../../images/1_7.png" ></image>
             </view>
         </view>
     </view>

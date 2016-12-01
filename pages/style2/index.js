@@ -1,5 +1,6 @@
 //index.js
-var queryArea = require('../area/area.js')
+ var app = getApp();
+var queryArea = require('../area/area.js');
 Page({
   data: {
 
@@ -26,7 +27,7 @@ Page({
       queryArea.selectArea(that,e);
   },
   //获取地区信息
-  getAreaInfo:function(e){
+  save:function(e){
     var that = this;
     //获取以选择的省份信息
     var province = queryArea.getProvince(that,e);
@@ -37,5 +38,7 @@ Page({
     //获取以选择的县/镇信息
     var district = queryArea.getDistrict(that,e);
     console.log(district)
+    app.globalData.areaInfo = province.name + city.name + district.name;
+    wx.navigateBack();
   }
 })

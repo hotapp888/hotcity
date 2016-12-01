@@ -36,6 +36,9 @@ page{
     height: 160rpx;
     background: #fff;
 }
+.area_type_active{
+    background: #e4e4e4;
+}
 .area_type_txt{
     padding-left:40rpx;
     color: #666;

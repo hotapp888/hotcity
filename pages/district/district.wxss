@@ -17,6 +17,7 @@
     text-align: left;
 }
 .district_name {
+    position: relative;
     height: 80rpx;
     line-height: 80rpx;
     font-size: 34rpx;
@@ -24,4 +25,11 @@
     font-family: '微软雅黑';
     color: #666;
     border-bottom: 1px solid #ccc;
+}
+.district_arrow{
+    position: absolute;
+    right: 40rpx;
+    width:18rpx; height:24rpx;
+    top: 50%;
+    margin-top: -12rpx;
 }

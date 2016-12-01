@@ -38,3 +38,9 @@ page{
     border-color: #fb8d5c;
     color: #fb8d5c; 
 }
+.save-area-btn{
+    margin-top: 50rpx;
+    width: 60%;
+    color: #fff;
+    background: #fc8e5d;
+}

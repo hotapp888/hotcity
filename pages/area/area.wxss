@@ -19,6 +19,7 @@
 }
 .area_input{
     flex: 1;
+    position: relative;
     padding: 16rpx 16rpx;
     font-size: 36rpx;
     border: 1px solid #ccc;
@@ -51,9 +52,11 @@
     top: 0;
     z-index: 9;
 }
-.save-area-btn{
-    margin-top: 50rpx;
-    width: 80%;
-    color: #fff;
-    background: #fc8e5d;
+
+.area_arrow{
+    position: absolute;
+    right: 26rpx;
+    width:18rpx; height:24rpx;
+    top: 50%;
+    margin-top: -12rpx;
 }

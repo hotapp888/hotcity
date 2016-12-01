@@ -13,3 +13,4 @@
         <view class='district-info-detail {{districts.selectedDistrict ? "active" : ""}}'>{{ districts.selectedDistrict }}</view>
     </view>
 </view>
+<button bindtap='save' class='save-area-btn'>保存</button>
