@@ -49,6 +49,8 @@ function getProvinces(that) {
         }
         districts.showCities = false;
         districts.showDistricts = false;
+        districts.selectedCity = '';
+        districts.selectedDistrict = '';
         that.setData({
             districts: districts
         });
@@ -70,6 +72,7 @@ function getCities(that, event) {
         } else {
             districts.showCities = true;
         }
+        districts.selectedDistrict = '';
         districts.showDistricts = false;
         that.setData({
             districts: districts

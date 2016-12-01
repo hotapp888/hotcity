@@ -1,2 +1,40 @@
 /**index.wxss**/
 @import "../district/district.wxss";
+page{
+    background: #f7f7f7;
+}
+.get-provinces{
+    padding: 30rpx 0;
+    background: #e6e6e6;
+    text-align: center;
+    font-size: 36rpx;
+    color: #666;
+    font-family: '微软雅黑';
+}
+.district-info{
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 20rpx;
+    padding-right: 20rpx;
+    margin-top: 60rpx;
+    font-family: '微软雅黑';
+    font-size: 35rpx;
+}
+.district-info-left{
+    padding-left: 20rpx;
+}
+.district-info-right{
+    flex: 1;
+}
+.district-info-detail{
+    height: 60rpx;
+    line-height: 60rpx;
+    border-radius: 32rpx;
+    border: 1px solid #e6e6e6;
+    padding: 6rpx 40rpx;
+    margin-bottom: 40rpx;
+}
+.district-info-detail.active{
+    border-color: #fb8d5c;
+    color: #fb8d5c; 
+}

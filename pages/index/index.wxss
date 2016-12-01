@@ -1,0 +1,49 @@
+page{
+    background: #fefefe;
+}
+.title{
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 40rpx 20rpx;
+    font-size: 34rpx;
+    background: #efeff4;
+    font-family: "微软雅黑";
+}
+.area_label{
+    padding: 10rpx 20rpx 10rpx 0;
+    line-height: 1.4rem;
+    text-align: right;
+    color: #666;
+}
+.area_input{
+    padding: 10rpx 20rpx;
+    flex: 1;
+    border-radius: 8rpx;
+    border: 1px solid #e6e6e6;
+}
+.area_type_list{
+    position: relative;
+    padding: 40rpx  30rpx;
+    background: #fefefe;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #e6e6e6;
+}
+.area_type_img{
+    width: 160rpx;
+    height: 160rpx;
+    background: #fff;
+}
+.area_type_txt{
+    padding-left:40rpx;
+    color: #666;
+    flex: 1;
+    font-size: 46rpx;
+    font-family: "微软雅黑";
+}
+.area_type_arrow{
+    width: 16px;
+    height: 28px;
+}

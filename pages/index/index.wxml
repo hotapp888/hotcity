@@ -1,0 +1,18 @@
+<view class="title">
+   <view class="area_label">未选择城市：</view>
+    <input class="area_input"  value="" /> 
+</view>
+<navigator url="../style1/index" >
+    <view class="area_type_list">
+        <view class="area_type_img"></view>
+        <view class="area_type_txt">样式一</view>
+        <image class="area_type_arrow" src="../../images/1_6.png" ></image>
+    </view>
+</navigator>
+<navigator url="../style2/index" >
+    <view class="area_type_list" >
+        <view class="area_type_img"></view>
+        <view class="area_type_txt">样式二</view>
+        <image class="area_type_arrow" src="../../images/1_6.png" ></image>
+    </view>
+</navigator>

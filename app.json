@@ -1,25 +1,30 @@
 {
   "pages":[
+    "pages/index/index",
     "pages/style1/index",
     "pages/style2/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "选择地区",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor": "#fc8e5d",
+    "navigationBarTitleText": "HotApp城市选择器",
+    "navigationBarTextStyle":"#fff"
   },
   "tabBar": {
+    "color": "#b3b3b3",
+    "selectedColor": "#fc8e5d",
+    "backgroundColor": "#f5f5f7",
+    "borderStyle" : "white",
     "list": [{
-      "pagePath": "pages/style1/index",
-      "text": "样式一",
-      "iconPath": "iconPath",
-      "selectedIconPath": "selectedIconPath"
+      "pagePath": "pages/index/index",
+      "text": "城市选择",
+      "iconPath": "images/1_4.png",
+      "selectedIconPath": "images/1_5.png"
     }, {
-      "pagePath": "pages/style2/index",
-      "text": "样式二",
-      "iconPath": "iconPath",
-      "selectedIconPath": "selectedIconPath"
+      "pagePath": "pages/index/index",
+      "text": "反馈",
+      "iconPath": "images/1_2.png",
+      "selectedIconPath": "images/1_3.png"
     }]
   }
 }

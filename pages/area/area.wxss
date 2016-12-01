@@ -54,4 +54,6 @@
 .save-area-btn{
     margin-top: 50rpx;
     width: 80%;
+    color: #fff;
+    background: #fc8e5d;
 }

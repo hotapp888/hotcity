@@ -1,28 +1,36 @@
 <!-- district.wxml -->
 <template name="district">
-    <view class='district-section-wrap'>
-        <view id="province" class='district-section' wx:if="{{districts.showProvinces}}">
-            <block wx:for="{{districts.provinces}}" >
-                <view class="district_name" data-adcode="{{item.adcode}}" data-name="{{item.name}}" bindtap="getCities">
-                    {{item.name}}
-                </view>
-            </block>
-        </view>
-
-        <view id="city" class='district-section' wx:if="{{districts.showCities}}">
-            <block wx:for="{{districts.cities}}">
-                <view class="district_name" data-adcode="{{item.adcode}}" data-name="{{item.name}}" bindtap="getDistricts">
-                    {{item.name}}
-                </view>
-            </block>
-        </view>
-        
-        <view id="town" class='district-section' wx:if="{{districts.showDistricts}}">
-            <block wx:for="{{districts.districts}}">
-                <view class="district_name" data-adcode="{{item.adcode}}" data-name="{{item.name}}" bindtap="finish">
-                    {{item.name}}
-                </view>
-            </block>
-        </view>
-    </view>
+    <block wx:if="{{districts.showProvinces}}">
+        <scroll-view scroll-y="true"  class='district-section-wrap'>
+            <view id="province" class='district-section'>
+                <block wx:for="{{districts.provinces}}" >
+                    <view class="district_name" data-adcode="{{item.adcode}}" data-name="{{item.name}}" bindtap="getCities">
+                        {{item.name}}
+                    </view>
+                </block>
+            </view>
+        </scroll-view >
+    </block>
+    <block wx:if="{{districts.showCities}}">
+        <scroll-view scroll-y="true"  class='district-section-wrap' >
+            <view id="city" class='district-section'>
+                <block wx:for="{{districts.cities}}">
+                    <view class="district_name" data-adcode="{{item.adcode}}" data-name="{{item.name}}" bindtap="getDistricts">
+                        {{item.name}}
+                    </view>
+                </block>
+            </view>
+        </scroll-view > 
+    </block>
+    <block wx:if="{{districts.showDistricts}}">
+        <scroll-view scroll-y="true"  class='district-section-wrap' >
+            <view id="town" class='district-section'>
+                <block wx:for="{{districts.districts}}">
+                    <view class="district_name" data-adcode="{{item.adcode}}" data-name="{{item.name}}" bindtap="finish">
+                        {{item.name}}
+                    </view>
+                </block>
+            </view>
+        </scroll-view >
+    </block>
 </template>
