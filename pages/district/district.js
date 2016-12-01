@@ -1,3 +1,4 @@
+var app = getApp();
 var host = 'https://wxapi.hotapp.cn/api/districts';
 var districts = {
     provinces: [],
@@ -114,8 +115,13 @@ function finish(that, event) {
     that.setData({
         districts: districts
     });
+    save()
 }
-
+//保存并退出
+function save(){
+    app.globalData.areaInfo = districts.selectedProvince + districts.selectedCity + districts.selectedDistrict;
+    wx.navigateBack();
+}
 module.exports = {
   getProvinces: getProvinces,
   getCities: getCities,
