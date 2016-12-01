@@ -6,6 +6,8 @@ HotCity城市选择器由HotApp小程序统计团队开发并开源：https://gi
 //index.js
 var app = getApp();
 var queryArea = require('../area/area.js');
+//引入HotApp小程序统计SDK
+var hotapp = require('../../util/hotapp.js');
 Page({
   data: {},
   onLoad: function(options) {
@@ -13,6 +15,10 @@ Page({
     //初始化地区选择器
     var that = this;
     queryArea.init(that,options);
+  },
+  onShow:function(){
+      //接入HotApp小程序统计   统计页面打开次数
+      hotapp.onEvent("startStyle2");
   },
   //显示地区
   showArea:function(e){

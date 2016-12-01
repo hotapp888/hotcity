@@ -9,13 +9,17 @@ var areaData = {
     province:'',
     city:'',
     district:'',
-    areaListShow:false,
-    districtShow:true
+    areaListShow:'',
+    districtShow:''
 }
 //初始化
 function init(that,e){
-    areaData.areaListShow = false,
-    areaData.districtShow = true
+    areaData.areaList = '';
+    areaData.province = '';
+    areaData.city = '';
+    areaData.district = '';
+    areaData.areaListShow = false;
+    areaData.districtShow = true;
     that.setData({
         areaData:areaData
     })

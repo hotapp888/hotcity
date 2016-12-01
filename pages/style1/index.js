@@ -5,9 +5,14 @@ HotCity城市选择器由HotApp小程序统计团队开发并开源：https://gi
 */
 //index.js
 var districts = require('../district/district.js');
+var hotapp = require('../../util/hotapp.js');
 var app = getApp();
 Page({
   data: {},
+  onShow:function(){
+      //接入HotApp小程序统计   统计页面打开次数
+      hotapp.onEvent("startStyle1");
+  },
   /**
    * 获取省份
    */
