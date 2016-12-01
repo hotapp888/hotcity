@@ -84,6 +84,7 @@ function selectArea(that,e){
             areaData.city = res.data[0];
             query(areaData.city.adcode,that,function(res){
                 areaData.district = res.data[0];
+                //如果 区县 的数据为空则不显示
                 if(areaData.district){
                     areaData.districtShow = true;
                 }else{
@@ -105,6 +106,7 @@ function selectArea(that,e){
         areaData.areaListShow = false;
         query(areaData.city.adcode,that,function(res){
             areaData.district = res.data[0];
+            //如果 区县 的数据为空则不显示
             if(areaData.district){
                 areaData.districtShow = true;
             }else{
@@ -119,9 +121,6 @@ function selectArea(that,e){
     if(level == 'district'){
         areaData.district = item;
         areaData.areaListShow = false;
-        if(!areaData.district){
-            areaData.districtShow = false;
-        }
         that.setData({
             areaData : areaData
         })
