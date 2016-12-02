@@ -172,3 +172,9 @@ CREATE TABLE `tbl_districts` (
 ```
 
 另外, 考虑到有些用户可能以后会自己开发后台, 所以也提供了数据库导出接口, 在这里 http://wenda.hotapp.cn/article/3, 这个会导出我们的数据库表接口和所有数据!
+
+--------
+
+hot云笔记小程序 云端存储记事的开源小程序
+https://github.com/hotapp888/hotapp-notepad
+
