@@ -1,5 +1,5 @@
-# hotapp 城市选择
-
+# hotCity 城市选择器， 城市数据库可自己导出
+##后台数据API 由HotApp小程序统计提供并维护，如果需要自己导出在自己的生产环境，最后面有sql完整下载链接
 ## 使用方法
 
 - 复制pages/district到你的项目目录
@@ -27,17 +27,18 @@ finish事件需要调用districts.finish(this, event);
 
 ## 应用截图
 ![首页](https://github.com/hotapp888/hotcity/blob/master/screenshots/1.png)
+###样式一 通过导航实现三级选择
 ![首页](https://github.com/hotapp888/hotcity/blob/master/screenshots/2.png)
 ![首页](https://github.com/hotapp888/hotcity/blob/master/screenshots/3.png)
 ![首页](https://github.com/hotapp888/hotcity/blob/master/screenshots/4.png)
+###样式二 三级联动
 ![首页](https://github.com/hotapp888/hotcity/blob/master/screenshots/5.png)
 ![首页](https://github.com/hotapp888/hotcity/blob/master/screenshots/6.png)
 ![首页](https://github.com/hotapp888/hotcity/blob/master/screenshots/7.png)
 
-## 统计截图
+## 统计截图 通过接入hotApp的统计，可知道大家喜欢那个城市选择器
 ![首页](https://github.com/hotapp888/hotcity/blob/master/screenshots/01.png)
-![首页](https://github.com/hotapp888/hotcity/blob/master/screenshots/01.png)
-![首页](https://github.com/hotapp888/hotcity/blob/master/screenshots/01.png)
+
 
 ## 数据来源
 
