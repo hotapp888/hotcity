@@ -25,8 +25,19 @@ getCities事件需要调用districts.getCities(this, event);
 getDistricts事件需要调用districts.getDistricts(this, event);  
 finish事件需要调用districts.finish(this, event);  
 
-## 截图
+## 应用截图
+![首页](https://github.com/hotapp888/hotcity/blob/master/screenshots/1.png)
+![首页](https://github.com/hotapp888/hotcity/blob/master/screenshots/2.png)
+![首页](https://github.com/hotapp888/hotcity/blob/master/screenshots/3.png)
+![首页](https://github.com/hotapp888/hotcity/blob/master/screenshots/4.png)
+![首页](https://github.com/hotapp888/hotcity/blob/master/screenshots/5.png)
+![首页](https://github.com/hotapp888/hotcity/blob/master/screenshots/6.png)
+![首页](https://github.com/hotapp888/hotcity/blob/master/screenshots/7.png)
 
+## 统计截图
+![首页](https://github.com/hotapp888/hotcity/blob/master/screenshots/01.png)
+![首页](https://github.com/hotapp888/hotcity/blob/master/screenshots/01.png)
+![首页](https://github.com/hotapp888/hotcity/blob/master/screenshots/01.png)
 
 ## 数据来源
 
